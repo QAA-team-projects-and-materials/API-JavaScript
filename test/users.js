@@ -1,4 +1,4 @@
-import { expect } from 'chai';
+ import { expect } from 'chai';
 import supertest from 'supertest';
 
 const request = supertest("https://gorest.co.in/public-api");
@@ -66,7 +66,7 @@ xdescribe("Users", () => {
                 expect(res.body.data).to.deep.include(data);
             })
 
-    });
+    }); 
     
     it("DELETE/users/:id", () =>{
         return request
