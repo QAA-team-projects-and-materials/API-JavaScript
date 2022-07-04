@@ -48,7 +48,7 @@ xdescribe("Users", () =>
             })
         });
         
-        it("/users with query params", () =>{
+        it('/users with query params', () =>{
             const url = `/users?access-token=${TOKEN}&gender=male&status=active`;
             return request.get(url).then((res) => {
                 expect(res.body.data).to.not.be.empty;
@@ -76,15 +76,14 @@ xdescribe("Users", () =>
         });
     });
     
-    describe("DELETE", () => {
+    describe('DELETE', () => {
         it("DELETE/users/:id", () =>{
             return request
                 .delete(`/users/${userId}}?access-token=${TOKEN}`)
                 .then((res) => {
                     expect(res.body.data).to.be.eq(null);
                 });     
-        });  
+        });    
     });
-
 });
     
