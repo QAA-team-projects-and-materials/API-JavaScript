@@ -1,4 +1,4 @@
- import { expect } from 'chai';
+import { expect } from 'chai';
 import supertest from 'supertest';
 
 const request = supertest("https://gorest.co.in/public-api");
